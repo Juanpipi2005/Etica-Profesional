@@ -210,6 +210,34 @@
   color: #f2f3fa;
 }
 
+.justificacion-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.support-figure {
+  margin: 0;
+  border: 1px solid #ffffff3a;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #ffffff12;
+  box-shadow: 0 12px 30px #0f12252b;
+}
+
+.support-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.support-figure figcaption {
+  padding: 0.8rem 0.9rem;
+  font-size: 0.92rem;
+  color: #e9eefc;
+}
+
 .section-soft {
   background:
     radial-gradient(circle at 8% 18%, #ffe6a3 0%, transparent 40%),
@@ -251,6 +279,82 @@
 .intro-card li {
   margin-bottom: 0.55rem;
   color: #273451;
+}
+
+.referentes-stack {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.context-hero {
+  margin: 0 0 1.2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #c6bc99;
+  background: #fff3db;
+  box-shadow: 0 10px 24px #2d241213;
+}
+
+.context-hero img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.context-hero figcaption {
+  margin: 0;
+  padding: 0.75rem 0.95rem;
+  color: #24395a;
+  font-size: 0.94rem;
+}
+
+.referente-card {
+  border: 1px solid #d8cda7;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  background: #fff9eeeb;
+  box-shadow: 0 10px 24px #2d24120f;
+}
+
+.referente-card h4 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.2rem, 2.7vw, 1.55rem);
+  color: #1f2f55;
+}
+
+.referente-body p {
+  margin: 0 0 0.85rem;
+  color: #2a3857;
+}
+
+.referente-aporte,
+.referente-referencias {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed #b8ad86;
+}
+
+.referente-aporte h5,
+.referente-referencias h5 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  color: #15274b;
+}
+
+.referente-aporte p,
+.referente-referencias li {
+  margin: 0;
+  color: #263553;
+}
+
+.referente-referencias ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.referente-referencias li {
+  margin-bottom: 0.5rem;
 }
 
 .standards-grid,
@@ -316,6 +420,10 @@
 @media (max-width: 980px) {
   .author-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .justificacion-layout {
+    grid-template-columns: 1fr;
   }
 
   .intro-grid {
